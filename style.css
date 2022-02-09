@@ -23,8 +23,42 @@ nav ul a {
   text-decoration: none;
   color: white;
   transition: 02s ease-in;
+  font-size: 18px;
 }
 nav ul a:hover {
+  background-color: rgb(49, 3, 3);
+  color: white;
+}
+.Items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.Item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.Item img:hover {
+  transform: scale(1.04);
+}
+.Item h4 {
+  padding: 5px;
+  text-align: center;
+}
+.Item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
   background-color: brown;
-  color: blanchedalmond;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
 }
